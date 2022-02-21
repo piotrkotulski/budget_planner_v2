@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/05c0e919ca.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div class="appArea">
+        <header>
+            <h1><i class="fas fa-wallet"></i>Budget Planner</h1>
+            <p>Twój osobisty menager finansów</p>
+
+        </header>
+        <main>
+            <section class="display">
+                <h1 class="howMuchLeft"></h1>
+            </section>
+            <section class="transactions">
+                <h2>WYKAZ TRANSAKCJI</h2>
+                <div class="transactionArea">
+                    <div class="incomeSection">
+                        <h3>PRZYCHODY:</h3>
+                        <div class="addArea">
+                            <form id="add-income" class="inputs">
+                                    <input type="text" name="name" class="incomeInput nameInput"
+                                        placeholder="Wpisz nazwę przychodu">
+                                    <input type="number" class="incomeAmountInput amountInput"
+                                        placeholder="Wpisz kwotę">
+                                <button type="submit" class="addIncomeBtn addBtn"><i class="fas fa-plus"></i></button>
+                            </form>
+                        </div>
+                        <div class="displayArea">
+                            <ul id="incomes" class="incomesList">
+                            </ul>
+                            <p class="sumOfIncomes"></p>
+                        </div>
+                    </div>
+                    <div class="outcomeSection">
+                        <h3>WYDATKI:</h3>
+                        <div class="addArea">
+                            <div class="inputs">
+                                <input type="text" class="outcomeInput nameInput" placeholder="Wpisz nazwę wydatku">
+                                <input type="number" class="outcomeAmountInput amountInput" placeholder="Wpisz kwotę">
+                            </div>
+                            <button class="addOutcomeBtn addBtn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="displayArea">
+                            <ul id="outcomes" class="outcomesList">
+                            </ul>
+                            <p class="sumOfOutcomes"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

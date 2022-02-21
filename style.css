@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    background-color: rgba(219, 221, 206, 0.911);
+}
+
+.appArea{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    background-image: linear-gradient(rgb(251, 255, 251) 0%, rgb(181, 214, 181) 70%);
+    box-shadow: 8px 8px rgb(91, 136, 91);
+    text-align: center;
+    border-radius: 7px;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    background-image: linear-gradient(rgb(114, 155, 148) 0%, rgb(39, 131, 100) 60%);
+    border-radius: 7px 7px 0 0;
+}
+header i{
+    font-size: 100px;
+    margin-right: 20px;
+}
+header p {
+margin-top: -20px;
+margin-left: 120px;
+}
+
+.listOfTransactions{
+    display: flex;
+    
+}
+.incomeSection{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px;
+    border: green solid 1px;  
+    color: rgb(24, 119, 56);
+}
+.incomeSection h3{
+    color: rgb(24, 119, 56);
+}
+.outcomeSection{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px;
+    border: green solid 1px;
+    color:rgb(177, 57, 57);
+}
+.outcomeSection h3{
+    color:rgb(177, 57, 57);
+}
+input{
+    width: 100%;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+    border: none;
+}
+button {
+    background: none;
+    border: none;
+    transition: transform .5s ;
+    cursor: pointer;
+    margin-left: 30px;
+}
+button:hover{
+transform: scale(0.8);
+}
+.addIncomeBtn{
+    background-color:lightcyan ;
+    border-radius: 50%;
+    color: green;
+    font-size: 40px;
+}
+.addOutcomeBtn{
+    background-color:lightcyan ;
+    border-radius: 50%;
+    color: green;
+    font-size: 40px; 
+}
+.edit{
+    color: blue;
+    background-color:lightcyan ;
+    border-radius: 6px;
+}
+.delete{
+    color: red;
+    background-color: lightpink;
+    border-radius: 50%;
+}
+.transactions{
+    display:flex;
+    flex-direction: column;
+}
+.transactionArea{
+    display: flex;
+}
+
+.addArea{
+    display:flex ;
+}
+.displayArea{
+    text-align: left;
+    flex-direction: row;
+    
+}
+.displayArea li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px whitesmoke;
+    list-style: none;
+}
+
+#add-income{
+    display: flex;
+}
